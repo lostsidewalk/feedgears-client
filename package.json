@@ -11,17 +11,14 @@
     "devserve": "vue-cli-service serve --mode development --port 3000"
   },
   "dependencies": {
-    "@vue-a11y/announcer": "^3.1.5",
     "core-js": "^3.8.3",
     "flag-icons": "^6.6.6",
     "font-awesome": "^4.7.0",
-    "lodash.debounce": "^4.0.8",
     "strict-csp-html-webpack-plugin": "^1.0.2",
     "vue": "^3.3.4",
     "vue-i18n": "^9.2.2",
     "vue-plyr": "^7.0.0",
     "vue-router": "^4.0.13",
-    "vue3-native-notification": "^0.2.0",
     "vuetify": "^3.2.2"
   },
   "devDependencies": {

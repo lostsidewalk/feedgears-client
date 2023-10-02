@@ -8,11 +8,11 @@ const en = {
   cancel: "Cancel",
   // landing
   feedGearsRssLogo: "FeedGears RSS",
-  whatIsFeedGears: "A modern, customizable, feed reader.",
+  visitUsOnGithub: "FeedGears on Github",
+  supportUsOnPatreon: "Support us on Patreon",
+  whatIsFeedGears: "A modern, self-hosted, RSS aggregator.",
   whyIsFeedGearsFree: "Free forever because we love RSS.",
   devBlog: "Dev Blog",
-  docs: "Docs",
-  api: "API",
   email: "Email",
   twitter: "Twitter",
   github: "Github",
@@ -104,12 +104,6 @@ const en = {
   listOfLinksOfInterest: 'List of useful and/or interesting links about RSS',
   // video panel
   rssMadeEasy: "RSS Made Easy",
-  // go back
-  goBack: "Go back",
-  // docs
-  feedGearsDocumentation: "FEEDGEARS DOCUMENTATION",
-  // api
-  feedGearsApi: "FEEDGEARS API",
   // privacy policy
   feedGearsPrivacyPolicy: "FEEDGEARS PRIVACY POLICY",
   whatInformationDoWeCollect: "What information do we collect?",

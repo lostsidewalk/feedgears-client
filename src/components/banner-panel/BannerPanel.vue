@@ -37,13 +37,7 @@
       </v-col>
     </v-row>
 
-    <v-divider
-      v-if="!isAuthenticated && showAuth"
-      class="mt-8"
-    />
-
     <v-row
-      v-if="!isAuthenticated && showAuth"
       justify="center"
       class="mt-8"
     >
@@ -51,37 +45,32 @@
         cols="12"
         sm="10"
       >
-        <SignUpButton />
+        <VisitUsOnGithubButton />
       </v-col>
     </v-row>
     <v-row
-      v-if="!isAuthenticated && showAuth"
       justify="center"
     >
       <v-col
         cols="12"
         sm="10"
       >
-        <GoogleAuthButton />
+        <SupportUsOnPatreonButton />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import SignUpButton from '@/components/layout/SignUpButton.vue';
-import GoogleAuthButton from '@/components/layout/GoogleAuthButton.vue';
+import VisitUsOnGithubButton from '@/components/layout/VisitUsOnGithubButton.vue';
+import SupportUsOnPatreonButton from '@/components/layout/SupportUsOnPatreonButton.vue';
 
 export default {
   name: "BannerPanel",
   components: { 
-    SignUpButton, 
-    GoogleAuthButton,
+    VisitUsOnGithubButton,
+    SupportUsOnPatreonButton, 
   },
-  props: {
-    isAuthenticated: { type: Boolean, default: false },
-    showAuth: { type: Boolean, default: true },
-  }
 }
 </script>
 

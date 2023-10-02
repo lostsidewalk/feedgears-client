@@ -21,25 +21,11 @@
           @click.prevent="devBlog"
         />
         <v-btn
-          :size="buttonSize" 
-          variant="text"
-          prepend-icon="fa-question-circle"
-          :text="$t('docs')"
-          @click.prevent="$router.push('/docs');"
-        />
-        <v-btn
           :size="buttonSize"  
           variant="text" 
           prepend-icon="fa-file-text" 
           :text="$t('privacyPolicy')"
           @click="showPrivacyPolicy = !showPrivacyPolicy"
-        />
-        <v-btn
-          :size="buttonSize" 
-          variant="text" 
-          prepend-icon="fa-plug"
-          :text="$t('api')"
-          @click.prevent="$router.push('/api');"
         />
         <v-btn
           :size="buttonSize" 

@@ -1,29 +1,11 @@
 import { createWebHistory, createRouter } from "vue-router";
 import LandingView from "@/views/LandingView.vue";
-import DocsView from "@/views/DocsView.vue";
-import ApiView from "@/views/ApiView.vue";
 
 const routes = [
   {
     path: "/",
     name: "LandingView",
     component: LandingView,
-    props: {
-      baseUrl: process.env.VUE_APP_FEEDGEARS_API_URL,
-    },
-  },
-  {
-    path: "/docs",
-    name: "DocsView",
-    component: DocsView,
-    props: {
-      baseUrl: process.env.VUE_APP_FEEDGEARS_API_URL,
-    },
-  },
-  {
-    path: "/api",
-    name: "ApiView",
-    component: ApiView,
     props: {
       baseUrl: process.env.VUE_APP_FEEDGEARS_API_URL,
     },

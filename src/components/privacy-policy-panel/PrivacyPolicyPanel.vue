@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-card-title class="pa-4">
-      {{ $t('feedGearsPrivacyPolicy') }}
+      {{ $t('newsgearsPrivacyPolicy') }}
     </v-card-title>
     <v-divider />
     <v-card-text>

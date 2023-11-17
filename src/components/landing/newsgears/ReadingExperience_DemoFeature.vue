@@ -96,7 +96,7 @@
 </template>
 
 <script>
-import DemoFeature from './DemoFeature.vue';
+import DemoFeature from '../DemoFeature.vue';
 
 export default {
   components: {

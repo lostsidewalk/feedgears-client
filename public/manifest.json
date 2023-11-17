@@ -1,7 +1,7 @@
 {
-    "name": "Newsgears RSS",
-    "short_name": "Newsgears",
-    "description": "Newsgears RSS Reader",
+    "name": "Feedgears",
+    "short_name": "feedgears",
+    "description": "Feedgears RSS News and Information",
     "theme_color": "red",
     "background_color": "#171717",
     "display": "standalone",
@@ -11,16 +11,16 @@
     "id": "/",
     "icons": [
         {
-          "src": "newsgears.png",
+          "src": "feedgears.png",
           "sizes": "144x144"
         },
         {
-          "src": "newsgears_maskable.png",
+          "src": "feedgears_maskable.png",
           "sizes": "192x192",
           "purpose": "maskable"
         },
         {
-          "src": "newsgears_splash.png",
+          "src": "feedgears_splash.png",
           "sizes": "512x512"
         }
       ]

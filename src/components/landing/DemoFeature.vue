@@ -41,6 +41,6 @@ export default {
 }
 
 .demo-detail {
-  font-size: larger;
+  font-size: medium;
 }
 </style>

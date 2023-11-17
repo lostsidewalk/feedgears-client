@@ -7,25 +7,25 @@
     @click="goToGithub"
   >
     <span style="white-space: normal;letter-spacing: normal;text-transform: none;">
-      {{ $t('visitUsOnGithub') }}
+      {{ $t('composableRssOnGithub') }}
     </span>
     <v-tooltip
       location="end"
       activator="parent"
       open-delay="2000"
-      :aria-label="$t('visitUsOnGithub')"
+      :aria-label="$t('composableRssOnGithub')"
     >
-      {{ $t('visitUsOnGithub') }}
+      {{ $t('composableRssOnGithub') }}
     </v-tooltip>
   </v-btn>
 </template>
 
 <script>
 export default {
-  name: "VisitUsOnGithubButton",
+  name: "ComposableRssOnGithubButton",
   methods: {
     goToGithub() {
-      window.location='https://www.github.com/lostsidewalk/newsgears-app';
+      window.location='https://www.github.com/lostsidewalk/composable-rss-app';
     },
   }
 }

@@ -32,13 +32,9 @@
           <v-carousel-item>
             <OPML_DemoFeature :is-dark="isDark" /> 
           </v-carousel-item>
-          <!-- misc. features -->
+          <!-- about newsgears (misc. features) -->
           <v-carousel-item>
-            <Misc_DemoFeature />
-          </v-carousel-item>
-          <!-- api access -->
-          <v-carousel-item>
-            <ApiAccess_DemoFeature /> 
+            <AboutNewsgears_DemoFeature />
           </v-carousel-item>
         </v-carousel>
       </v-card>
@@ -47,14 +43,13 @@
 </template>
 
 <script>
-import SimplifiedOrganization_DemoFeature from './demo/SimplifiedOrganization_DemoFeature.vue';
-import FeedDashboard_DemoFeature from './demo/FeeeDashboard_DemoFeature.vue';
-import EnahcedFiltering_DemoFeature from './demo/EnhancedFiltering_DemoFeature.vue';
-import LayoutOptions_DemoFeature from './demo/LayoutOptions_DemoFeature.vue';
-import ReadingExperience_DemoFeature from './demo/ReadingExperience_DemoFeature.vue';
-import OPML_DemoFeature from './demo/OPML_DemoFeature.vue';
-import Misc_DemoFeature from './demo/Misc_DemoFeature.vue';
-import ApiAccess_DemoFeature from './demo/ApiAccess_DemoFeature.vue';
+import SimplifiedOrganization_DemoFeature from './SimplifiedOrganization_DemoFeature.vue';
+import FeedDashboard_DemoFeature from './FeeeDashboard_DemoFeature.vue';
+import EnahcedFiltering_DemoFeature from './EnhancedFiltering_DemoFeature.vue';
+import LayoutOptions_DemoFeature from './LayoutOptions_DemoFeature.vue';
+import ReadingExperience_DemoFeature from './ReadingExperience_DemoFeature.vue';
+import OPML_DemoFeature from './OPML_DemoFeature.vue';
+import AboutNewsgears_DemoFeature from './AboutNewsgears_DemoFeature.vue';
 
 export default {
   name: "DemoPanel",
@@ -65,8 +60,7 @@ export default {
     LayoutOptions_DemoFeature,
     ReadingExperience_DemoFeature,
     OPML_DemoFeature,
-    Misc_DemoFeature,
-    ApiAccess_DemoFeature,
+    AboutNewsgears_DemoFeature,
   },
   computed: {
     isDark: function () {
@@ -100,5 +94,6 @@ export default {
         ';
     },
   }
+
 }
 </script>

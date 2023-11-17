@@ -1,9 +1,9 @@
 <template>
   <DemoFeature
-    :title="$t('simplifiedOrganization')"
+    :title="$t('opmlSupport')"
     :details="[
-      $t('simplifiedOrganization_detail1'),
-      $t('simplifiedOrganization_detail2'),
+      $t('opmlSupport_detail1'),
+      $t('opmlSupport_detail2'),
     ]"
   >
     <template #body>
@@ -13,8 +13,8 @@
       >
         <v-card-text>
           <v-img
-            :src="'reader_' + (isDark ? 'dark' : 'light') + '_2.png'"
-            :alt="$t('queuePageScreenshot')"
+            :src="'opml_upload_' + (isDark ? 'dark' : 'light') + '.png'"
+            :alt="$t('opmlUploadScreenshot')"
           />
         </v-card-text>
       </v-card>
@@ -22,9 +22,8 @@
   </DemoFeature>
 </template>
 
-
 <script>
-import DemoFeature from './DemoFeature.vue';
+import DemoFeature from '../DemoFeature.vue';
 
 export default {
   components: {

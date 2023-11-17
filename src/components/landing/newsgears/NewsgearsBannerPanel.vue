@@ -1,13 +1,13 @@
 <template>
   <v-container>
     <v-row>
-      <!-- Newsgears RSS -->
+      <!-- Newsgears -->
       <v-col
         cols="12"
         align="center"
       >
         <h1 class="logotext">
-          Newsgears RSS
+          Newsgears
         </h1>
       </v-col>
       <!-- (logo) -->
@@ -37,6 +37,22 @@
       </v-col>
     </v-row>
 
+    <v-row justify="center" class="mt-8">
+      <v-col cols="12" sm="10">
+        <h4 class="fancy">
+          {{ $t('whatIsNewsgearsDetails') }}
+        </h4>
+      </v-col>
+    </v-row>
+
+    <v-row justify="center" class="mt-8">
+      <v-col cols="12" sm="10">
+        <h4 class="fancy">
+          {{ $t('youCanDeployTheEntireStack') }}
+        </h4>
+      </v-col>
+    </v-row>
+
     <v-row
       justify="center"
       class="mt-8"
@@ -45,7 +61,7 @@
         cols="12"
         sm="10"
       >
-        <VisitUsOnGithubButton />
+        <NewsgearsOnGithubButton />
       </v-col>
     </v-row>
     <v-row
@@ -62,13 +78,13 @@
 </template>
 
 <script>
-import VisitUsOnGithubButton from '@/components/layout/VisitUsOnGithubButton.vue';
-import SupportUsOnPatreonButton from '@/components/layout/SupportUsOnPatreonButton.vue';
+import NewsgearsOnGithubButton from './NewsgearsOnGithubButton.vue';
+import SupportUsOnPatreonButton from '../SupportUsOnPatreonButton.vue';
 
 export default {
   name: "BannerPanel",
   components: { 
-    VisitUsOnGithubButton,
+    NewsgearsOnGithubButton,
     SupportUsOnPatreonButton, 
   },
 }
@@ -85,26 +101,6 @@ export default {
 
 .logosubduedtext {
   font-size: 2.0rem;
-}
-
-@media(max-width: 320px) {
-  .logosubtext {
-    font-size: 2.0rem;
-  }
-
-  .logosubduedtext {
-    font-size: 1.0rem;
-  }
-}
-
-@media(max-width: 280px) {
-  .logosubtext {
-    font-size: 1.5rem;
-  }
-
-  .logosubduedtext {
-    font-size: 0.5rem;
-  }
 }
 
 .fancy {

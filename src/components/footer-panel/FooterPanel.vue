@@ -121,8 +121,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .copyright {
   font-size: small;
 }
 </style>
+4

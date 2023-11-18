@@ -1,7 +1,7 @@
 {
     "name": "Feedgears",
     "short_name": "feedgears",
-    "description": "Feedgears RSS News and Information",
+    "description": "FeedGears RSS News and Information",
     "theme_color": "red",
     "background_color": "#171717",
     "display": "standalone",

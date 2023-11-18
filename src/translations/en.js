@@ -29,7 +29,7 @@ const en = {
   //
   whatIsComposableRss: "A self-hosted, API-driven feed server",
   whatIsComposableRssDetails:
-    "ComposableRSS is a multiuser platform for creating, publishing, and fully managing all aspects of the syndicated web feed lifecycle. It provides a robust solution for managing web feeds and content distribution using a developer-friendly REST API. ComposableRSS is built upon the GPLV3 NewsGears libraries, implemented entirely in Java, and is freely available on Github.",
+    "ComposableRSS is a multiuser platform for creating, publishing, and fully managing all aspects of the syndicated web feed lifecycle. It provides a robust solution for managing web feeds and content distribution using a developer-friendly REST API. ComposableRSS is built upon the GPLV3 Newsgears libraries, implemented entirely in Java, and is freely available on Github.",
   youCanDeployTheEntireStack:
     "You can deploy the entire stack to your environment with minimal configuration using Docker by following the instructions located on Github.",
   //
@@ -98,9 +98,6 @@ const en = {
   openApiV3_detail1:
     "OpenAPIv3 is a standardized specification for documenting RESTful APIs. This OpenAPIv3 document is your guide to using the ComposableRSS API. Click the link to access detailed information on API endpoints, parameters, request/response formats, and examples for integration with ComposableRSS.",
   aboutComposableRss: "About ComposableRSS",
-  //
-  //
-  //
   // demo
   filterScreenshot: "Queue filter screenshot",
   listLayoutsScreenshot: "List layout screenshot",

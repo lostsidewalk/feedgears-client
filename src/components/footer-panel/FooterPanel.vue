@@ -112,7 +112,7 @@ export default {
       window.open('https://github.com/lostsidewalk', '_blank');
     },
     twitch() {
-      window.open('https://twitch.tv/elderscrollsjesus', '_blank');
+      window.open('https://twitch.tv/lostsidewalk', '_blank');
     },
     discord() {
       window.open('https://discord.gg/7nyY89UrNw', '_blank');

@@ -7,6 +7,9 @@ const fr = {
   privacyPolicy: "Politique de confidentialité",
   cancel: "Annuler",
   // landing
+  feedgears: "FeedGears is a news and information site about RSS and related technologies, mainly focused on tracking the development of two free/open-source projects I built: Newsgears and ComposableRSS. Both Newsgears and ComposableRSS are full-stack applications that are intended to be easy to deploy to your own environment to facilitate upstream feed access (Newsgears) and publishing (ComposableRSS) capabilities for your organization/multiple users.",
+  feedgears_detail1: "This site also tracks development of RSS-related projects on Github, and information from other pertinent sources.",
+  feedgears_detail2: "If you're feeling generous, please consider supporting this effort on Patreon. Better yet, make a feature request, bug report, or fork one of the many repos below and make a code contribution.",
   newsgearsLogo: "Newsgears",
   newsgearsOnGithub: "Newsgears on Github",
   composableRssOnGithub: "ComposableRSS on Github",

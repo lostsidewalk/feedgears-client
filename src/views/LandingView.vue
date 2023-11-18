@@ -18,6 +18,20 @@
     </v-app-bar>
 
     <v-main style="min-width: fit-content;">
+      <v-alert class="ma-4" border="bottom" color="darkgrey" density="comfortable" variant="text">
+        <div class="d-flex flex-row flex-gap-1">
+          <img src="me.webp" height=128 />
+          <div class="intro">
+            <p>{{ $t('feedgears') }}</p>
+            <br>
+            <p>{{ $t('feedgears_detail1') }}</p>
+            <br>
+            <p>{{ $t('feedgears_detail2') }}</p>
+            <br>
+            <p><a href="https://www.lostsidewalk.com">Lost Sidewalk Software</a></p>
+          </div>
+        </div>
+      </v-alert>
       <NewsgearsPanel v-if="showNewsgears" />
       <ComposableRssPanel v-if="showComposableRss" />
       <v-divider class="mt-8 mb-8" />
@@ -57,7 +71,11 @@ export default {
 </script>
 
 <style scoped>
-/** buttons */
+.intro {
+  font-size: smaller;
+}
+
+.intro,
 .newsgears,
 .composable-rss {
   font-family: "Russo One", system-ui, sans-serif;

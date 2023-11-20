@@ -1,14 +1,19 @@
 <template>
-  <DemoFeature :title="$t('createAndServeFeeds')" :details="[
-    $t('createAndServeFeeds_detail1'), $t('createAndServeFeeds_detail2')
-  ]">
+  <DemoFeature
+    :title="$t('createAndServeFeeds')"
+    :details="[
+      $t('createAndServeFeeds_detail1'), $t('createAndServeFeeds_detail2')
+    ]"
+  >
     <template #body>
       <div class="create-and-serve-feeds">
         <div>{{ $t('theBasics') }}</div>
         <div>{{ $t('theBasics_detail1') }}</div>
         <div>{{ $t('theBasics_detail2') }}</div>
         <!-- API call -->
-        <div class="bold">{{ $t('createAndServeFeeds_apiCall') }}</div>
+        <div class="bold">
+          {{ $t('createAndServeFeeds_apiCall') }}
+        </div>
         <pre>curl --request POST \
   -H "Content-Type: application/json" \
   -H "X-ComposableRSS-API-Key: ${API_KEY}" \
@@ -16,7 +21,9 @@
   --data '{ "ident": "spiders" }' \
   https://<span class="green">api.yourdomain.com</span>/v1/queues</pre>
         <!-- feed payload -->
-        <div class="bold">{{ $t('createAndServeFeeds_payload') }}</div>
+        <div class="bold">
+          {{ $t('createAndServeFeeds_payload') }}
+        </div>
         <CreateQueueFeedPayload />
         <!-- follow-on API calls -->
         <div>{{ $t('createAndServeFeeds_followOnCalls') }}</div>

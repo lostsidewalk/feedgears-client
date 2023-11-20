@@ -7,6 +7,7 @@
       <h3 class="demo-verbiage">
         {{ title }}
       </h3>
+      <slot name="title" />
     </v-card-title>
     <v-card-text>
       <p

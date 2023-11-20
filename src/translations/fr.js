@@ -2,8 +2,7 @@ const fr = {
   // generic
   somethingHorribleHappened:
     "Quelque chose d'horrible s'est produit et nous ne savons pas exactement quoi ! Veuillez réessayer dans quelques instants.",
-  requestTimedOut:
-    "La requête a expiré, veuillez réessayer dans quelques instants.",
+  requestTimedOut: "La requête a expiré, veuillez réessayer dans quelques instants.",
   privacyPolicy: "Politique de confidentialité",
   cancel: "Annuler",
   // landing
@@ -11,12 +10,13 @@ const fr = {
   feedgears_detail1: "This site also tracks development of RSS-related projects on Github, and information from other pertinent sources.",
   feedgears_detail2: "If you're feeling generous, please consider supporting this effort on Patreon. Better yet, make a feature request, bug report, or fork one of the many repos below and make a code contribution.",
   newsgearsLogo: "Newsgears",
+  composableRss: "Composable RSS",
   newsgearsOnGithub: "Newsgears on Github",
   composableRssOnGithub: "ComposableRSS on Github",
   supportUsOnPatreon: "Support us on Patreon",
   whatIsNewsgears: "Un agrégateur RSS moderne et auto-hébergé.",
   whatIsNewsgearsDetails:
-    "Newsgears is a multi-user, self-hosted RSS reader/aggregator platform. This project exists to provide a free, open-source, turn-key method of facilitating access to RSS feeds for your users. Newsgears offers a performant back-end aggregator, security concious middleware, as well as a modern, accessible web-based reader.",
+  "Newsgears is a multi-user, all-in-one feed reader/aggregator platform. This project exists to provide a free, open-source, turn-key method of facilitating access to RSS feeds for your users. Newsgears is comprised of a performant back-end feed aggregator, scalable middleware, and a modern, accessible web-based reader.",
   whyIsNewsgearsFree: "Gratuit pour toujours car nous aimons les flux RSS.",
   devBlog: "Blog de développement",
   email: "E-mail",
@@ -34,7 +34,7 @@ const fr = {
   whatIsComposableRssDetails:
     "ComposableRSS is a multiuser platform for creating, publishing, and fully managing all aspects of the syndicated web feed lifecycle. It provides a robust solution for managing web feeds and content distribution using a developer-friendly REST API. ComposableRSS is built upon the GPLV3 Newsgears libraries, implemented entirely in Java, and is freely available on Github.",
   youCanDeployTheEntireStack:
-    "You can deploy the entire stack to your environment with minimal configuration using Docker by following the instructions located on Github.",
+    "You can deploy the entire stack to your environment with minimal configuration using Docker by following the instructions located below.",
   //
   createAndServeFeeds: "Create and Serve Feeds",
   createAndServeFeeds_detail1:
@@ -134,16 +134,41 @@ const fr = {
     "Le tableau de bord des flux affiche des informations résumées sur chaque file d'attente d'articles. Chaque carte du tableau de bord est configurable ; vous pouvez ajouter et supprimer des détails et des boutons d'action selon vos besoins.",
   feedDashboard_detail2:
     "Newsgears affiche le nombre d'éléments non lus et l'article le plus récemment publié ou mis à jour pour tous les abonnements dans une file d'attente. La carte du tableau de bord donne également un accès rapide pour gérer les abonnements et obtenir en un coup d'œil des détails sur chaque flux dans une file d'attente :",
-  dashboardCardScreenshot:
-    "Capture d'écran de la carte du tableau de bord de la file d'attente",
-  queueSettingsScreenshot:
-    "Capture d'écran des paramètres de la file d'attente",
+  dashboardCardScreenshot: "Capture d'écran de la carte du tableau de bord de la file d'attente",
+  queueSettingsScreenshot: "Capture d'écran des paramètres de la file d'attente",
   // demo (layout options)
   layoutOptions: "Dispositions et thèmes",
   layoutOptions_detail1:
     "Choisissez parmi trois dispositions de lecture : vue tabulaire, vue en liste ou vue en cartes. La vue en liste offre une présentation simplifiée, vous permettant de faire défiler les articles. La vue en cartes affiche des images en vedette et des extraits pour une expérience de lecture plus engageante. La vue tabulaire offre un format structuré, utile pour un aperçu rapide des titres.",
   layoutOptions_detail2:
     "Des thèmes clairs et sombres sont disponibles pour réduire la fatigue oculaire dans les environnements peu éclairés.",
+  // demo (newsgears repositories) 
+  deployingNewsgears: 'Deploying Newsgears',
+  deployingNewsgears_detail1: 'The first step to deploying Newsgears to your environment is to clone the repository and customize the docker-compose.yml file for your requirements. You can boot it out of the box for testing and local development.',
+  deployingNewsgears_detail2: 'Address the comments to configure Newsgears for your environment.',
+  deployingNewsgears_detail3: 'Pre-built images of the individual stack components are available in the lostsidewalk repository on docker.io:',
+  deployingNewsgears_detail4: 'Use `docker-compose up` to build any start any of these files; please remember to read and address comments within.',
+  deployingNewsgears_detail5: 'For local testing, boots out of the box (without authentication)',
+  deployingNewsgears_detail6: 'For local development, pauses boot-up until remote debugger is attached (without authentication)',
+  // demo (code availability) 
+  newsgearsCode: 'Newsgears Code',
+  newsgearsCode_detail1: 'Newsgears is free/open-source software protected by GPLV3. I am always seeking contributions from users and developers alike. Please visit the project top-level code repository on Github for information on how to participate, including a list of immediately workable issues and a project roadmap.',
+  newsgearsCode_detail2: 'The core Newsgears component libraries are published to Maven Central. You can use these if you want to integrate Newsgears functionality into your own application.',
+  newsgearsCode_detail3: 'Direct links to the top-level Newsgears repositories are available here:',
+  // demo 
+  deployingComposableRss: 'Deploying ComposableRSS',
+  deployingComposableRss_detail1: 'ComposableRSS is easy to deploy using docker. Use a docker-compose.yml file provided below to quick start your preferred version of the application for testing or local development using pre-built images hosted on docker.io.',
+  deployingComposableRss_detail2: 'Address the comments to configure ComposableRSS for your environment.',
+  deployingComposableRss_detail3: 'Pre-built images of the individual stack components are available here:',
+  deployingComposableRss_detail4: 'Use `docker-compose up` to build any start any of these files; please remember to read and address comments within.',
+  deployingComposableRss_detail5: 'For local testing, always logged in as a single administrative user',
+  deployingComposableRss_detail6: 'For local development, always logged in as a s single administrative user and pauses during boot-up until remote debugger is attached',
+  deployingComposableRss_detail7: 'For prod use (multi-user support enabled)',
+  deployingComposableRss_detail8: 'For local development, has multi-user support and pauses during boot-up until remote debugger is attached',
+  // demo
+  composableRssCode: 'ComposableRSS Code',
+  composableRssCode_detail1: 'ComposableRSS is free/open-source software protected by GPLV3. I am always seeking contributions from users and developers alike. Please visit the project top-level code repository on Github for information on how to participate, including a list of immediately workable issues and a project roadmap.',
+  composableRssCode_detail3: 'Direct links to the top-level ComposableRSS repositories are available here:',
   // demo (misc)
   aboutNewsgears: "À propos de Newsgears",
   accessible: "Accessible",
@@ -175,11 +200,6 @@ const fr = {
     "Nous invitons les développeurs et les passionnés à rejoindre notre communauté et à contribuer au projet. Que ce soit par des contributions de code, des corrections de bugs, des suggestions de fonctionnalités ou des améliorations de documentation, nous apprécions toutes les formes d'implication. Ensemble, nous pouvons améliorer la plateforme Newsgears et répondre aux besoins évolutifs de nos utilisateurs.",
   freeAsInBeer_detail3:
     "Dans l'esprit du logiciel libre et open source, nous croyons en la liberté d'utiliser, d'examiner, de modifier et de redistribuer les logiciels. Notre objectif est de favoriser la collaboration, le partage des connaissances et l'innovation. Nous vous invitons à vous joindre à notre aventure, où nous visons à construire une communauté active et solidaire de développeurs, contributeurs et utilisateurs. Vos contributions, quelle que soit leur taille, sont hautement valorisées et essentielles pour façonner l'avenir de Newsgears. Célébrons le pouvoir du logiciel libre et travaillons ensemble pour créer une expérience meilleure et plus inclusive pour tous.",
-  selfHostable: "Auto-hébergeable / Conteneurs pré-construits",
-  selfHostable_detail1:
-    "Vous pouvez exécuter Newsgears dans votre environnement préféré. Nos conteneurs pré-construits sont compatibles avec différentes plateformes OCI telles que Docker et Podman. Cela vous permet de déployer et de gérer Newsgears selon vos besoins spécifiques.",
-  selfHostable_detail2:
-    "L'auto-hébergement vous permet de conserver vos données dans votre propre environnement, vous offrant un contrôle total sur l'ensemble du processus d'agrégation des flux RSS. Vous pouvez choisir de l'exécuter sur votre machine locale, votre serveur privé ou au sein de votre infrastructure conteneurisée.",
   // demo (opml)
   opmlSupport: "Prise en charge d'OPML",
   opmlSupport_detail1:
@@ -232,12 +252,10 @@ const fr = {
     "Nous collectons des informations personnelles que vous nous fournissez.",
   whatWeCollectDetails:
     "Nous collectons des informations personnelles que vous nous fournissez volontairement lorsque vous vous inscrivez sur Newsgears, exprimez un intérêt pour obtenir des informations sur nous ou Newsgears, lorsque vous participez à des activités sur Newsgears, ou lorsque vous nous contactez.",
-  whatWeCollectImportantDetails:
-    "Nous ne traitons pas d'informations sensibles.",
+  whatWeCollectImportantDetails: "Nous ne traitons pas d'informations sensibles.",
   whatWeCollectFurtherDetails:
     "Toutes les informations personnelles que vous nous fournissez doivent être vraies, complètes et exactes, et vous devez nous informer de tout changement de ces informations personnelles.",
-  someCollectionIsAutomatic:
-    "Certaines informations sont collectées automatiquement",
+  someCollectionIsAutomatic: "Certaines informations sont collectées automatiquement",
   automaticCollectionDetails:
     "Certaines informations, telles que votre adresse IP et/ou les caractéristiques du navigateur et du dispositif, sont collectées automatiquement lorsque vous visitez Newsgears. Ces informations (système d'exploitation, préférences linguistiques, URL de référence, nom du dispositif, pays, emplacement, informations sur la manière et le moment où vous utilisez Newsgears, et autres informations techniques) ne révèlent pas votre identité spécifique (comme votre nom ou vos coordonnées), mais peuvent inclure des informations sur le dispositif et son utilisation. Ces informations sont principalement nécessaires pour assurer la sécurité et le fonctionnement de Newsgears, ainsi que pour nos analyses internes et nos rapports.",
   howDoWeProcess: "Comment traitons-nous vos informations ?",
@@ -255,8 +273,7 @@ const fr = {
     "Nos serveurs sont situés aux États-Unis. Si vous accédez à Newsgears depuis l'extérieur des États-Unis, veuillez noter que vos informations peuvent être transférées, stockées et traitées par nous dans nos installations et par celles de tiers avec lesquels nous pouvons partager vos informations personnelles, aux États-Unis et dans d'autres pays.",
   internationalInformationTransfersFurther:
     "Si vous résidez dans l'Espace économique européen (EEE) ou au Royaume-Uni (RU), ces pays peuvent ne pas avoir de lois sur la protection des données ou d'autres lois similaires aussi exhaustives que celles de votre pays. Nous prendrons toutes les mesures nécessaires pour protéger vos informations personnelles conformément à cet avis de confidentialité et à la législation applicable.",
-  whatAreYourPrivacyRights:
-    "Quels sont vos droits en matière de confidentialité ?",
+  whatAreYourPrivacyRights: "Quels sont vos droits en matière de confidentialité ?",
   yourPrivacyRightsSummary:
     "Vous pouvez examiner, modifier ou résilier votre compte à tout moment.",
   yourPrivacyRightsDetails:
@@ -267,11 +284,9 @@ const fr = {
   doWeMakeUpdates: "Mise à jour de cette notice",
   doWeMakeUpdatesSummary:
     "Oui, nous mettrons à jour cette notice si nécessaire pour rester conforme aux lois applicables.",
-  howCanYouContactUs:
-    "Comment pouvez-vous nous contacter concernant cette notice ?",
+  howCanYouContactUs: "Comment pouvez-vous nous contacter concernant cette notice ?",
   // image alts
-  queuePageScreenshot:
-    "Capture d'écran de la page de file d'attente de Newsgears",
+  queuePageScreenshot: "Capture d'écran de la page de file d'attente de Newsgears",
 };
 
 export default fr;

@@ -36,6 +36,14 @@
           <v-carousel-item>
             <AboutNewsgears_DemoFeature />
           </v-carousel-item>
+          <!-- deploying newsgears -->
+          <v-carousel-item>
+            <DeployingNewsgears_DemoFeature />
+          </v-carousel-item>
+          <!-- newsgears code -->
+          <v-carousel-item>
+            <NewsgearsCode_DemoFeature />
+          </v-carousel-item>
         </v-carousel>
       </v-card>
     </v-sheet>
@@ -50,6 +58,8 @@ import LayoutOptions_DemoFeature from './LayoutOptions_DemoFeature.vue';
 import ReadingExperience_DemoFeature from './ReadingExperience_DemoFeature.vue';
 import OPML_DemoFeature from './OPML_DemoFeature.vue';
 import AboutNewsgears_DemoFeature from './AboutNewsgears_DemoFeature.vue';
+import DeployingNewsgears_DemoFeature from './DeployingNewsgears_DemoFeature.vue';
+import NewsgearsCode_DemoFeature from './NewsgearsCode_DemoFeature.vue';
 
 export default {
   name: "DemoPanel",
@@ -61,6 +71,8 @@ export default {
     ReadingExperience_DemoFeature,
     OPML_DemoFeature,
     AboutNewsgears_DemoFeature,
+    DeployingNewsgears_DemoFeature,
+    NewsgearsCode_DemoFeature,
   },
   computed: {
     isDark: function () {

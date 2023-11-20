@@ -37,16 +37,28 @@
       </v-col>
     </v-row>
 
-    <v-row justify="center" class="mt-8">
-      <v-col cols="12" sm="10">
+    <v-row
+      justify="center"
+      class="mt-8"
+    >
+      <v-col
+        cols="12"
+        sm="10"
+      >
         <h4 class="fancy">
           {{ $t('whatIsNewsgearsDetails') }}
         </h4>
       </v-col>
     </v-row>
 
-    <v-row justify="center" class="mt-8">
-      <v-col cols="12" sm="10">
+    <v-row
+      justify="center"
+      class="mt-8"
+    >
+      <v-col
+        cols="12"
+        sm="10"
+      >
         <h4 class="fancy">
           {{ $t('youCanDeployTheEntireStack') }}
         </h4>

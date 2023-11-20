@@ -14,52 +14,52 @@
         cols="12"
       >
         <v-btn
-          :size="buttonSize" 
+          :size="buttonSize"
           variant="text"
           prepend-icon="fa-code-fork"
-          :text="$t('devBlog')" 
+          :text="$t('devBlog')"
           @click.prevent="devBlog"
         />
         <v-btn
-          :size="buttonSize"  
-          variant="text" 
-          prepend-icon="fa-file-text" 
+          :size="buttonSize"
+          variant="text"
+          prepend-icon="fa-file-text"
           :text="$t('privacyPolicy')"
           @click="showPrivacyPolicy = !showPrivacyPolicy"
         />
         <v-btn
-          :size="buttonSize" 
-          variant="text" 
+          :size="buttonSize"
+          variant="text"
           prepend-icon="fa-envelope"
           :text="$t('email')"
           @click.prevent="sendSupportMail"
         />
         <v-btn
-          :size="buttonSize" 
-          variant="text" 
+          :size="buttonSize"
+          variant="text"
           prepend-icon="fa-twitter"
           :text="$t('twitter')"
           @click.prevent="twitter"
         />
         <v-btn
-          :size="buttonSize" 
-          variant="text" 
+          :size="buttonSize"
+          variant="text"
           prepend-icon="fa-github"
-          :text="$t('github')" 
+          :text="$t('github')"
           @click.prevent="github"
         />
         <v-btn
-          :size="buttonSize" 
-          variant="text" 
+          :size="buttonSize"
+          variant="text"
           prepend-icon="fa-twitch"
-          :text="$t('twitch')" 
+          :text="$t('twitch')"
           @click.prevent="twitch"
         />
         <v-btn
-          :size="buttonSize" 
-          variant="text" 
+          :size="buttonSize"
+          variant="text"
           prepend-icon="fa-comments-o"
-          :text="$t('discord')" 
+          :text="$t('discord')"
           @click.prevent="discord"
         />
       </v-row>
@@ -69,7 +69,8 @@
           class="text-center mt-4"
         >
           <div class="copyright">
-            {{ $t('copyright') }} <v-icon icon="fa-copyright" /> 2023 <a
+            {{ $t("copyright") }} <v-icon icon="fa-copyright" /> 2023
+            <a
               href="https://www.lostsidewalk.com"
               target="_blank"
             >LOST SIDEWALK SOFTWARE LLC</a>
@@ -84,41 +85,41 @@
 </template>
 
 <script>
-import PrivacyPolicyPanel from '@/components/privacy-policy-panel/PrivacyPolicyPanel.vue';
-import buttonSizeMixin from '@/mixins/buttonSizeMixin';
+import PrivacyPolicyPanel from "@/components/privacy-policy-panel/PrivacyPolicyPanel.vue";
+import buttonSizeMixin from "@/mixins/buttonSizeMixin";
 
 export default {
   name: "FooterPanel",
   components: {
     PrivacyPolicyPanel,
   },
-  mixins: [buttonSizeMixin], 
+  mixins: [buttonSizeMixin],
   data() {
     return {
       showPrivacyPolicy: false,
-    }
+    };
   },
   methods: {
     devBlog() {
-      window.open('https://www.lostsidewalk.com/newsgears/devblog', '_blank');
+      window.open("https://www.lostsidewalk.com/newsgears/devblog", "_blank");
     },
     sendSupportMail() {
-      window.open('mailto:support@feedgears.com', '_blank');
+      window.open("mailto:support@feedgears.com", "_blank");
     },
     twitter() {
-      window.open('https://twitter.com/lostsidewalkllc', '_blank');
+      window.open("https://twitter.com/lostsidewalkllc", "_blank");
     },
     github() {
-      window.open('https://github.com/lostsidewalk', '_blank');
+      window.open("https://github.com/lostsidewalk", "_blank");
     },
     twitch() {
-      window.open('https://twitch.tv/lostsidewalk', '_blank');
+      window.open("https://twitch.tv/lostsidewalk", "_blank");
     },
     discord() {
-      window.open('https://discord.gg/7nyY89UrNw', '_blank');
-    }
-  }
-}
+      window.open("https://discord.gg/7nyY89UrNw", "_blank");
+    },
+  },
+};
 </script>
 
 <style scoped>

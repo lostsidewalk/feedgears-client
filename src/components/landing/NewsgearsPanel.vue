@@ -1,9 +1,9 @@
 <template>
-    <div>
-        <NewsgearsBannerPanel />
-        <v-divider class="mt-8 mb-8" />
-        <NewsgearsDemoPanel />
-    </div>
+  <div>
+    <NewsgearsBannerPanel />
+    <v-divider class="mt-8 mb-8" />
+    <NewsgearsDemoPanel />
+  </div>
 </template>
 
 <script>

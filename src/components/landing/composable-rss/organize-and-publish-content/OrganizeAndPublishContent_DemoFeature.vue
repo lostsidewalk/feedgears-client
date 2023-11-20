@@ -1,12 +1,17 @@
 <template>
-  <DemoFeature :title="$t('organizeAndPublishContent')" :details="[
-    $t('organizeAndPublishContent_detail1'),
-    $t('organizeAndPublishContent_detail2')
-  ]">
+  <DemoFeature
+    :title="$t('organizeAndPublishContent')"
+    :details="[
+      $t('organizeAndPublishContent_detail1'),
+      $t('organizeAndPublishContent_detail2')
+    ]"
+  >
     <template #body>
       <div class="organize-and-publish-content">
         <!-- API call -->
-        <div class="bold">{{ $t('organizeAndPublishContent_apiCall1') }}</div>
+        <div class="bold">
+          {{ $t('organizeAndPublishContent_apiCall1') }}
+        </div>
         <pre>curl --request POST \
   -H "Content-Type: application/json" \
   -H "X-ComposableRSS-API-Key: ${API_KEY}" \
@@ -14,10 +19,14 @@
   --data '[{ "postTitle": { "value": "spiders article" }, "postDesc": { "value": "spiders article description" } }]' \
   http://<span class="green">api.yourdomain.com</span>/v1/queues/spiders/posts</pre>
         <!-- feed payload -->
-        <div class="bold">{{ $t('organizeAndPublishContent_apiCall2') }}</div>
+        <div class="bold">
+          {{ $t('organizeAndPublishContent_apiCall2') }}
+        </div>
         <AddContentFeedPayload />
         <!-- follow-on API calls -->
-        <div class="bold">{{ $t('organizeAndPublishContent_apiCall3') }}</div>
+        <div class="bold">
+          {{ $t('organizeAndPublishContent_apiCall3') }}
+        </div>
       </div>
     </template>
   </DemoFeature>

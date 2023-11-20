@@ -1,7 +1,7 @@
 <template>
-    <FeedPayload>
-        <template #rss20>
-            <pre>curl -X GET https://<span class="green">feed.yourdomain.com</span>/feed/rss/me/spiders<br>
+  <FeedPayload>
+    <template #rss20>
+      <pre>curl -X GET https://<span class="green">feed.yourdomain.com</span>/feed/rss/me/spiders<br>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;rss version=&quot;2.0&quot;&gt;
   &lt;channel&gt;
@@ -15,9 +15,9 @@
   &lt;/channel&gt;
 &lt;/rss&gt;
 </pre>
-        </template>
-        <template #atom10>
-            <pre>curl -X GET https://<span class="green">feed.yourdomain.com</span>/feed/atom/me/spiders<br>
+    </template>
+    <template #atom10>
+      <pre>curl -X GET https://<span class="green">feed.yourdomain.com</span>/feed/atom/me/spiders<br>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;feed xmlns=&quot;http://www.w3.org/2005/Atom&quot;&gt;
   &lt;title&gt;spiders&lt;/title&gt;
@@ -27,9 +27,9 @@
   &lt;generator uri=&quot;https://www.feedgears.com&quot; version=&quot;0.5.9&quot;&gt;NewsGears RSS&lt;/generator&gt;
 &lt;/feed&gt;
 </pre>
-        </template>
-        <template #json>
-            <pre>curl -X GET https://<span class="green">feed.yourdomain.com</span>/feed/json/me/spiders<br>
+    </template>
+    <template #json>
+      <pre>curl -X GET https://<span class="green">feed.yourdomain.com</span>/feed/json/me/spiders<br>
 {
   "feed":
   {
@@ -41,8 +41,8 @@
   "posts":
   []
 }</pre>
-        </template>
-    </FeedPayload>
+    </template>
+  </FeedPayload>
 </template>
 
 <script>

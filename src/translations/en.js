@@ -16,7 +16,7 @@ const en = {
   supportUsOnPatreon: "Support us on Patreon",
   whatIsNewsgears: "A self-hosted feed aggregator.",
   whatIsNewsgearsDetails:
-    "Newsgears is a multi-user, self-hosted RSS reader/aggregator platform. This project exists to provide a free, open-source, turn-key method of facilitating access to RSS feeds for your users. Newsgears offers a performant back-end aggregator, security concious middleware, as well as a modern, accessible web-based reader.",
+    "Newsgears is a multi-user, all-in-one feed reader/aggregator platform. This project exists to provide a free, open-source, turn-key method of facilitating access to RSS feeds for your users. Newsgears is comprised of a performant back-end feed aggregator, scalable middleware, and a modern, accessible web-based reader.",
   whyIsNewsgearsFree: "Free because we love RSS.",
   devBlog: "Dev Blog",
   email: "Email",
@@ -34,7 +34,7 @@ const en = {
   whatIsComposableRssDetails:
     "ComposableRSS is a multiuser platform for creating, publishing, and fully managing all aspects of the syndicated web feed lifecycle. It provides a robust solution for managing web feeds and content distribution using a developer-friendly REST API. ComposableRSS is built upon the GPLV3 Newsgears libraries, implemented entirely in Java, and is freely available on Github.",
   youCanDeployTheEntireStack:
-    "You can deploy the entire stack to your environment with minimal configuration using Docker by following the instructions located on Github.",
+    "You can deploy the entire stack to your environment with minimal configuration using Docker by following the instructions located below.",
   //
   createAndServeFeeds: "Create and Serve Feeds",
   createAndServeFeeds_detail1:
@@ -142,6 +142,35 @@ const en = {
     "Choose from three reading layouts: tabular, list, or card views. The list view offers a streamlined presentation, allowing you to scroll through articles. The card view displays featured images and snippets for a more engaging reading experience. The tabular view provides a structured format, useful for a quick overview of headlines.",
   layoutOptions_detail2:
     "Light and dark themes are available to reduce eye strain in low-light environments.",
+  // demo (newsgears repositories) 
+  deployingNewsgears: 'Deploying Newsgears',
+  deployingNewsgears_detail1: 'Newsgears is easy to deploy using docker. Use a docker-compose.yml file provided below to quick start your preferred version of the application for testing or local development using pre-built images hosted on docker.io.',
+  deployingNewsgears_detail2: 'Address the comments to configure Newsgears for your environment.',
+  deployingNewsgears_detail3: 'Pre-built images of the individual stack components are available here:',
+  deployingNewsgears_detail4: 'Use `docker-compose up` to build any start any of these files; please remember to read and address comments within.',
+  deployingNewsgears_detail5: 'For local testing, always logged in as a single administrative user',
+  deployingNewsgears_detail6: 'For local development, always logged in as a s single administrative user and pauses during boot-up until remote debugger is attached',
+  deployingNewsgears_detail7: 'For prod use (multi-user support enabled)',
+  deployingNewsgears_detail8: 'For local development, has multi-user support and pauses during boot-up until remote debugger is attached',
+  // demo (code availability) 
+  newsgearsCode: 'Newsgears Code',
+  newsgearsCode_detail1: 'Newsgears is free/open-source software protected by GPLV3. I am always seeking contributions from users and developers alike. Please visit the project top-level code repository on Github for information on how to participate, including a list of immediately workable issues and a project roadmap.',
+  newsgearsCode_detail2: 'The core Newsgears component libraries are published to Maven Central. You can use these if you want to integrate Newsgears functionality into your own application.',
+  newsgearsCode_detail3: 'Direct links to the top-level Newsgears repositories are available here:',
+  // demo 
+  deployingComposableRss: 'Deploying ComposableRSS',
+  deployingComposableRss_detail1: 'ComposableRSS is easy to deploy using docker. Use a docker-compose.yml file provided below to quick start your preferred version of the application for testing or local development using pre-built images hosted on docker.io.',
+  deployingComposableRss_detail2: 'Address the comments to configure ComposableRSS for your environment.',
+  deployingComposableRss_detail3: 'Pre-built images of the individual stack components are available here:',
+  deployingComposableRss_detail4: 'Use `docker-compose up` to build any start any of these files; please remember to read and address comments within.',
+  deployingComposableRss_detail5: 'For local testing, always logged in as a single administrative user',
+  deployingComposableRss_detail6: 'For local development, always logged in as a s single administrative user and pauses during boot-up until remote debugger is attached',
+  deployingComposableRss_detail7: 'For prod use (multi-user support enabled)',
+  deployingComposableRss_detail8: 'For local development, has multi-user support and pauses during boot-up until remote debugger is attached',
+  // demo
+  composableRssCode: 'ComposableRSS Code',
+  composableRssCode_detail1: 'ComposableRSS is free/open-source software protected by GPLV3. I am always seeking contributions from users and developers alike. Please visit the project top-level code repository on Github for information on how to participate, including a list of immediately workable issues and a project roadmap.',
+  composableRssCode_detail3: 'Direct links to the top-level ComposableRSS repositories are available here:',
   // demo (misc)
   aboutNewsgears: "About Newsgears",
   accessible: "Accessible",
@@ -173,11 +202,6 @@ const en = {
     "We welcome developers and enthusiasts to join our community and contribute to the project. Whether it's through code contributions, bug fixes, feature suggestions, or documentation improvements, we value and appreciate all forms of involvement. Together, we can make the Newsgears platform even better and meet the evolving needs of our users.",
   freeAsInBeer_detail3:
     "In the spirit of FOSS, we believe in the freedom to use, examine, modify, and redistribute software. Our goal is to foster collaboration, knowledge sharing, and innovation. We invite you to join our journey, where we aim to build an active and supportive community of developers, contributors, and users. Your contributions, regardless of their size, are highly valued and instrumental in shaping the future of Newsgears. Let's celebrate the power of FOSS and work together to create a better and more inclusive experience for all.",
-  selfHostable: "Self-Hostable / Pre-Built Containers",
-  selfHostable_detail1:
-    "You can run Newsgears in your preferred environment. Our pre-built containers and compatible with various OCI-compliant runtimes such as Docker and Podman. This gives you the freedom to deploy and manage Newsgears according to your specific requirements.",
-  selfHostable_detail2:
-    "Self-hosting allows you to keep your data within your own environment, offering you full control over the entire RSS aggration process. You decide to run it on your local machine, private server, or within your containerized infrastructure.",
   // demo (opml)
   opmlSupport: "OPML Support",
   opmlSupport_detail1:

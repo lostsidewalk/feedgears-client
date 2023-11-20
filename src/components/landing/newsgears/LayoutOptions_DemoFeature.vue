@@ -7,7 +7,7 @@
     ]"
   >
     <template #body>
-      <v-row cols="12">
+      <div class="mb-16">
         <v-col
           md="4"
           sm="12"
@@ -50,7 +50,7 @@
             </v-card-text>
           </v-card>
         </v-col>
-      </v-row>
+      </div>
     </template>
   </DemoFeature>
 </template>

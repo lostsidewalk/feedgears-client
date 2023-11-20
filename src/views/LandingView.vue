@@ -1,26 +1,49 @@
 <template>
   <v-app>
-    <v-app-bar app location="top" :scroll-behavior="'elevate'">
+    <v-app-bar
+      app
+      location="top"
+      :scroll-behavior="'elevate'"
+    >
       <template #title>
         <div class="d-flex flex-gap-1">
           <!-- Newsgears -->
           <router-link to="/newsgears">
-            <v-btn class="newsgears flex-grow-1" :class="{ 'selected-app': showNewsgears }" variant="text"
-              prepend-icon="fa-feed" :text="$t('newsgears')" />
+            <v-btn
+              class="newsgears flex-grow-1"
+              :class="{ 'selected-app': showNewsgears }"
+              variant="text"
+              prepend-icon="fa-feed"
+              :text="$t('newsgears')"
+            />
           </router-link>
           <!-- ComposableRSS -->
           <router-link to="/composable-rss">
-            <v-btn class="composable-rss flex-grow-1" :class="{ 'selected-app': showComposableRss }" variant="text"
-              prepend-icon="fa-feed" :text="$t('composableRss')" />
+            <v-btn
+              class="composable-rss flex-grow-1"
+              :class="{ 'selected-app': showComposableRss }"
+              variant="text"
+              prepend-icon="fa-feed"
+              :text="$t('composableRss')"
+            />
           </router-link>
         </div>
       </template>
     </v-app-bar>
 
     <v-main style="min-width: fit-content;">
-      <v-alert class="ma-4" border="bottom" color="darkgrey" density="comfortable" variant="text">
+      <v-alert
+        class="ma-4"
+        border="bottom"
+        color="darkgrey"
+        density="comfortable"
+        variant="text"
+      >
         <div class="d-flex flex-row flex-gap-1">
-          <img src="me.webp" height=128 />
+          <img
+            src="me.webp"
+            height="128"
+          >
           <div class="intro">
             <p>{{ $t('feedgears') }}</p>
             <br>
@@ -58,6 +81,7 @@ export default {
     FAQPanel,
     FooterPanel,
   },
+  props: ["selectedApplication"],
   computed: {
     showComposableRss: function () {
       return this.selectedApplication === 'COMPOSABLE_RSS';
@@ -66,7 +90,6 @@ export default {
       return this.selectedApplication === 'NEWSGEARS';
     }
   },
-  props: ["selectedApplication"],
 }
 </script>
 

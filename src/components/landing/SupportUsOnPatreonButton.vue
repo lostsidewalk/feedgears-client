@@ -1,6 +1,12 @@
 <template>
-  <v-btn elevation="1" class="support-us-on-patreon-button flex-grow-1" variant="tonal" prepend-icon="fa-users"
-    :text="$t('supportUsOnPatreon')" @click="goToPatreon">
+  <v-btn
+    elevation="1"
+    class="support-us-on-patreon-button flex-grow-1"
+    variant="tonal"
+    prepend-icon="fa-users"
+    :text="$t('supportUsOnPatreon')"
+    @click="goToPatreon"
+  >
     <span style="white-space: normal;letter-spacing: normal;text-transform: none;">
       {{ $t('supportUsOnPatreon') }}
     </span>

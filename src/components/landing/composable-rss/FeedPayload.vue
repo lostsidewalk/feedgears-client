@@ -1,23 +1,41 @@
 <template>
-    <div class="tab-container">
-        <div class="tab-labels">
-            <div class="tab-label p-2" @click="this.selectedTab = 'RSS'"
-                :class="{ 'tab-label-selected': this.selectedTab === 'RSS' }">
-                RSS
-            </div>
-            <div class="tab-label p-2" @click="this.selectedTab = 'ATOM'"
-                :class="{ 'tab-label-selected': this.selectedTab === 'ATOM' }">
-                ATOM
-            </div>
-            <div class="tab-label p-2" @click="this.selectedTab = 'JSON'"
-                :class="{ 'tab-label-selected': this.selectedTab === 'JSON' }">
-                JSON
-            </div>
-        </div>
-        <slot name="rss20" v-if="this.selectedTab === 'RSS'" />
-        <slot name="atom10" v-if="this.selectedTab === 'ATOM'" />
-        <slot name="json" v-if="this.selectedTab === 'JSON'" />
+  <div class="tab-container">
+    <div class="tab-labels">
+      <div
+        class="tab-label p-2"
+        :class="{ 'tab-label-selected': selectedTab === 'RSS' }"
+        @click="selectedTab = 'RSS'"
+      >
+        RSS
+      </div>
+      <div
+        class="tab-label p-2"
+        :class="{ 'tab-label-selected': selectedTab === 'ATOM' }"
+        @click="selectedTab = 'ATOM'"
+      >
+        ATOM
+      </div>
+      <div
+        class="tab-label p-2"
+        :class="{ 'tab-label-selected': selectedTab === 'JSON' }"
+        @click="selectedTab = 'JSON'"
+      >
+        JSON
+      </div>
     </div>
+    <slot
+      v-if="selectedTab === 'RSS'"
+      name="rss20"
+    />
+    <slot
+      v-if="selectedTab === 'ATOM'"
+      name="atom10"
+    />
+    <slot
+      v-if="selectedTab === 'JSON'"
+      name="json"
+    />
+  </div>
 </template>
 
 <script>

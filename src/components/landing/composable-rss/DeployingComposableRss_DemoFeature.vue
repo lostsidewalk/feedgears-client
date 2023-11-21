@@ -132,9 +132,9 @@ export default {
           description: "ComposableRSS Engine Server (debug build)",
         },
         {
-          name: "composable-rss-feed",
+          name: "newsgears-rss",
           tag: "latest-debug",
-          description: "ComposableRSS Feed Server (debug build)",
+          description: "Newsgears Feed Server (debug build)",
         },
         {
           name: "composable-rss-client",

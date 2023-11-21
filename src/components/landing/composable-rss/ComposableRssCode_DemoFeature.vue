@@ -76,8 +76,8 @@ export default {
                     description: "ComposableRSS Engine Server",
                 },
                 {
-                    name: "composable-rss-feed",
-                    description: "ComposableRSS Feed Server",
+                    name: "Newsgears RSS",
+                    description: "Newsgears Feed Server",
                 },
                 {
                     name: "composable-rss-client",

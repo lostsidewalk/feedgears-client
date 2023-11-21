@@ -8,14 +8,14 @@
           height="1050"
           class="rounded"
         >
-          <!-- simplified organization - ok -->
+          <!-- simplified organization -->
           <v-carousel-item>
             <SimplifiedOrganization_DemoFeature :is-dark="isDark" />
           </v-carousel-item>
-          <!-- feed dashboard - -->
-          <v-carousel-item>
+          <!-- TODO: feed dashboard, disabled until we get a better screenshot -->
+          <!-- <v-carousel-item>
             <FeedDashboard_DemoFeature :is-dark="isDark" />
-          </v-carousel-item>
+          </v-carousel-item> -->
           <!-- enhanced filtering and searching -->
           <v-carousel-item>
             <EnahcedFiltering_DemoFeature :is-dark="isDark" />
@@ -68,7 +68,7 @@
 
 <script>
 import SimplifiedOrganization_DemoFeature from './SimplifiedOrganization_DemoFeature.vue';
-import FeedDashboard_DemoFeature from './FeedDashboard_DemoFeature.vue';
+// import FeedDashboard_DemoFeature from './FeedDashboard_DemoFeature.vue';
 import EnahcedFiltering_DemoFeature from './EnhancedFiltering_DemoFeature.vue';
 import LayoutOptions_DemoFeature from './LayoutOptions_DemoFeature.vue';
 import ReadingExperience_DemoFeature from './ReadingExperience_DemoFeature.vue';
@@ -85,7 +85,7 @@ export default {
   name: "DemoPanel",
   components: {
     SimplifiedOrganization_DemoFeature,
-    FeedDashboard_DemoFeature,
+    // FeedDashboard_DemoFeature,
     EnahcedFiltering_DemoFeature,
     LayoutOptions_DemoFeature,
     ReadingExperience_DemoFeature,

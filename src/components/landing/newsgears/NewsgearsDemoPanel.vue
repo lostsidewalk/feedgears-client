@@ -8,11 +8,11 @@
           height="1050"
           class="rounded"
         >
-          <!-- simplified organization -->
+          <!-- simplified organization - ok -->
           <v-carousel-item>
             <SimplifiedOrganization_DemoFeature :is-dark="isDark" />
           </v-carousel-item>
-          <!-- feed dashboard -->
+          <!-- feed dashboard - -->
           <v-carousel-item>
             <FeedDashboard_DemoFeature :is-dark="isDark" />
           </v-carousel-item>
@@ -32,9 +32,25 @@
           <v-carousel-item>
             <OPML_DemoFeature :is-dark="isDark" /> 
           </v-carousel-item>
-          <!-- about newsgears (misc. features) -->
+          <!-- accessible -->
           <v-carousel-item>
-            <AboutNewsgears_DemoFeature />
+            <Accessible_DemoFeature />
+          </v-carousel-item>
+          <!-- mobile optimized -->
+          <v-carousel-item>
+            <MobileOptimized_DemoFeature />
+          </v-carousel-item>
+          <!-- secure -->
+          <v-carousel-item>
+            <Secure_DemoFeature />
+          </v-carousel-item>
+          <!-- localized -->
+          <v-carousel-item>
+            <Localized_DemoFeature />
+          </v-carousel-item>
+          <!-- free -->
+          <v-carousel-item>
+            <Free_DemoFeature />
           </v-carousel-item>
           <!-- deploying newsgears -->
           <v-carousel-item>
@@ -52,12 +68,16 @@
 
 <script>
 import SimplifiedOrganization_DemoFeature from './SimplifiedOrganization_DemoFeature.vue';
-import FeedDashboard_DemoFeature from './FeeeDashboard_DemoFeature.vue';
+import FeedDashboard_DemoFeature from './FeedDashboard_DemoFeature.vue';
 import EnahcedFiltering_DemoFeature from './EnhancedFiltering_DemoFeature.vue';
 import LayoutOptions_DemoFeature from './LayoutOptions_DemoFeature.vue';
 import ReadingExperience_DemoFeature from './ReadingExperience_DemoFeature.vue';
 import OPML_DemoFeature from './OPML_DemoFeature.vue';
-import AboutNewsgears_DemoFeature from './AboutNewsgears_DemoFeature.vue';
+import Accessible_DemoFeature from './Accessible_DemoFeature.vue';
+import MobileOptimized_DemoFeature from './MobileOptimized_DemoFeature.vue';
+import Secure_DemoFeature from './Secure_DemoFeature.vue';
+import Localized_DemoFeature from './Localized_DemoFeature.vue';
+import Free_DemoFeature from './Free_DemoFeature.vue';
 import DeployingNewsgears_DemoFeature from './DeployingNewsgears_DemoFeature.vue';
 import NewsgearsCode_DemoFeature from './NewsgearsCode_DemoFeature.vue';
 
@@ -65,15 +85,19 @@ export default {
   name: "DemoPanel",
   components: {
     SimplifiedOrganization_DemoFeature,
-    FeedDashboard_DemoFeature, 
+    FeedDashboard_DemoFeature,
     EnahcedFiltering_DemoFeature,
     LayoutOptions_DemoFeature,
     ReadingExperience_DemoFeature,
     OPML_DemoFeature,
-    AboutNewsgears_DemoFeature,
     DeployingNewsgears_DemoFeature,
     NewsgearsCode_DemoFeature,
-  },
+    Accessible_DemoFeature,
+    MobileOptimized_DemoFeature,
+    Secure_DemoFeature,
+    Localized_DemoFeature,
+    Free_DemoFeature
+},
   computed: {
     isDark: function () {
       return this.$vuetify.theme.name === "dark";

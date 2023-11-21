@@ -27,7 +27,7 @@
                 :key="composeFile"
               >
                 <tr>
-                  <td class="left no-wrap">
+                  <td class="left">
                     {{ composeFile.name }}
                   </td>
                   <td class="left">
@@ -66,10 +66,10 @@
               >
                 <tr>
                   <td class="left">
-                    <span class="no-wrap">{{ image.name }}</span><br>
+                    <span>{{ image.name }}</span><br>
                     {{ image.description }}
                   </td>
-                  <td class="left no-wrap">
+                  <td class="left">
                     {{ image.tag }}
                   </td>
                   <td class="center">
@@ -187,9 +187,5 @@ section {
 
 .left {
   text-align: left;
-}
-
-.no-wrap {
-  text-wrap: nowrap;
 }
 </style>

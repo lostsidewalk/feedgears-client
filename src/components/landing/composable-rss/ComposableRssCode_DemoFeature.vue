@@ -26,7 +26,7 @@
               >
                 <tr>
                   <td class="left">
-                    <span class="no-wrap">{{ image.name }}</span><br>
+                    <span>{{ image.name }}</span><br>
                     {{ image.description }}
                   </td>
                   <td class="center">
@@ -122,9 +122,5 @@ export default {
 
 .left {
     text-align: left;
-}
-
-.no-wrap {
-    text-wrap: nowrap;
 }
 </style>

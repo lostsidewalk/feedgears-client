@@ -26,7 +26,7 @@
               >
                 <tr>
                   <td class="left">
-                    <span class="no-wrap">{{ image.name }}</span><br>
+                    <span>{{ image.name }}</span><br>
                     {{ image.description }}
                   </td>
                   <td class="center">
@@ -71,10 +71,10 @@
                   :key="project"
                 >
                   <td class="left">
-                    <span class="no-wrap">{{ project.name }}</span><br>
+                    <span>{{ project.name }}</span><br>
                     {{ project.description }}
                   </td>
-                  <td class="no-wrap">
+                  <td>
                     {{ project.version }}
                   </td>
                   <td class="center">
@@ -222,9 +222,5 @@ export default {
 
 .left {
     text-align: left;
-}
-
-.no-wrap {
-    text-wrap: nowrap;
 }
 </style>

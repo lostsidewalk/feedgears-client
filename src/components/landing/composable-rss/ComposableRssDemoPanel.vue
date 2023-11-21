@@ -20,33 +20,25 @@
           <v-carousel-item>
             <ManageFeedAuth_DemoFeature :is-dark="isDark" />
           </v-carousel-item>
-          <!-- customize content expiration, archival, and purging -->
-          <!-- <v-carousel-item>
-              <CustomizeContent_DemoFeature :is-dark="isDark" /> 
-            </v-carousel-item> -->
           <!-- publish iTunes podcasts -->
-          <!-- <v-carousel-item>
-              <PublishITunes_DemoFeature :is-dark="isDark" />
-            </v-carousel-item> -->
-          <!-- publish MediaRSS channels -->
-          <!-- <v-carousel-item>
-              <PublishMediaRss_DemoFeature :is-dark="isDark" /> 
-            </v-carousel-item> -->
-          <!-- support organizational needs -->
-          <!-- <v-carousel-item>
-              <MultiUser_DemoFeature />
-            </v-carousel-item> -->
-          <!-- CopmosableRss is free -->
-          <!-- <v-carousel-item>
-              <FreeSoftware_DemoFeature /> 
-            </v-carousel-item> -->
-          <!-- OpenApiV3 support -->
-          <!-- <v-carousel-item>
-              <OpenApiV3_DemoFeature /> 
-            </v-carousel-item> -->
-          <!-- about composable-rss (misc. features) -->
           <v-carousel-item>
-            <AboutComposableRss_DemoFeature />
+            <PublishITunes_DemoFeature />
+          </v-carousel-item>
+          <!-- publish MediaRSS groups and content -->
+          <v-carousel-item>
+            <PublishMediaRss_DemoFeature />
+          </v-carousel-item>
+          <!-- support organizational needs -->
+          <v-carousel-item>
+            <SupportOrganizationalNeeds_DemoFeature />
+          </v-carousel-item>
+          <!-- free as in beer -->
+          <v-carousel-item>
+            <Free_DemoFeature />
+          </v-carousel-item>
+          <!-- OpenAPIv3 -->
+          <v-carousel-item>
+            <OpenAPIv3_DemoFeature />
           </v-carousel-item>
           <v-carousel-item>
             <DeployingComposableRss_DemoFeature />
@@ -64,15 +56,13 @@
 import CreateAndServeFeeds_DemoFeature from "./create-and-serve-feeds/CreateAndServeFeeds_DemoFeature.vue";
 import OrganizeAndPublishContent_DemoFeature from "./organize-and-publish-content/OrganizeAndPublishContent_DemoFeature.vue";
 import ManageFeedAuth_DemoFeature from "./manage-feed-auth/ManageFeedAuth_DemoFeature.vue";
-// import CustomizeContent_DemoFeature from './CustomizeContent_DemoFeature.vue';
-// import PublishITunes_DemoFeature from './PublishITunes_DemoFeature.vue';
-// import PublishMediaRss_DemoFeature from './PublishMediaRss_DemoFeature.vue';
-// import MultiUser_DemoFeature from './MultiUser_DemoFeature.vue';
-// import FreeSoftware_DemoFeature from './FreeSoftware_DemoFeature.vue';
-// import OpenApiV3_DemoFeature from './OpenApiV3_DemoFeature.vue';
-import AboutComposableRss_DemoFeature from "./AboutComposableRss_DemoFeature.vue";
 import DeployingComposableRss_DemoFeature from "./DeployingComposableRss_DemoFeature.vue";
 import ComposableRssCode_DemoFeature from "./ComposableRssCode_DemoFeature.vue";
+import PublishITunes_DemoFeature from "./PublishITunes_DemoFeature.vue";
+import PublishMediaRss_DemoFeature from "./PublishMediaRss_DemoFeature.vue";
+import SupportOrganizationalNeeds_DemoFeature from "./SupportOrganizationalNeeds_DemoFeature.vue";
+import Free_DemoFeature from "./Free_DemoFeature.vue";
+import OpenAPIv3_DemoFeature from "./OpenAPIv3_DemoFeature.vue";
 
 export default {
   name: "DemoPanel",
@@ -80,15 +70,13 @@ export default {
     CreateAndServeFeeds_DemoFeature,
     OrganizeAndPublishContent_DemoFeature,
     ManageFeedAuth_DemoFeature,
-    // CustomizeContent_DemoFeature,
-    // PublishITunes_DemoFeature,
-    // PublishMediaRss_DemoFeature,
-    // MultiUser_DemoFeature,
-    // FreeSoftware_DemoFeature,
-    // OpenApiV3_DemoFeature,
-    AboutComposableRss_DemoFeature,
     DeployingComposableRss_DemoFeature,
     ComposableRssCode_DemoFeature,
+    PublishITunes_DemoFeature,
+    PublishMediaRss_DemoFeature,
+    SupportOrganizationalNeeds_DemoFeature,
+    Free_DemoFeature,
+    OpenAPIv3_DemoFeature,
   },
   computed: {
     isDark: function () {

@@ -14,12 +14,9 @@
         <div class="bold">
           {{ $t('createAndServeFeeds_apiCall') }}
         </div>
-        <pre>curl --request POST \
-  -H "Content-Type: application/json" \
-  -H "X-ComposableRSS-API-Key: ${API_KEY}" \
-  -H "X-ComposableRSS-API-Secret: ${API_SECRET}" \
-  --data '{ "ident": "spiders" }' \
-  https://<span class="green">api.yourdomain.com</span>/v1/queues</pre>
+        <div class="api-request-container">
+          <code>curl --request POST \<br>-H "Content-Type: application/json" \<br>-H "X-ComposableRSS-API-Key: ${API_KEY}" \<br>-H "X-ComposableRSS-API-Secret: ${API_SECRET}" \<br>--data '{ "ident": "spiders" }' \<br>https://<span class="green">api.yourdomain.com</span>/v1/queues</code>
+        </div>
         <!-- feed payload -->
         <div class="bold">
           {{ $t('createAndServeFeeds_payload') }}
@@ -27,8 +24,6 @@
         <CreateQueueFeedPayload />
         <!-- follow-on API calls -->
         <div>{{ $t('createAndServeFeeds_followOnCalls') }}</div>
-        <!-- next step -->
-        <div>{{ $t('createAndServeFeeds_next') }}</div>
       </div>
     </template>
   </DemoFeature>
@@ -52,6 +47,7 @@ export default {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 4rem;
+  contain: inline-size;
 }
 
 .green {
@@ -60,5 +56,10 @@ export default {
 
 .bold {
   font-weight: bold;
+}
+
+.api-request-container {
+  text-wrap: nowrap;
+  overflow-x: scroll;
 }
 </style>

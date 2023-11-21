@@ -54,7 +54,6 @@ const es = {
     "2. Now your feed is available in multiple formats on the hosted feed server (e.g., feed.yourdomain.com):",
   createAndServeFeeds_followOnCalls:
     "You can now make additional API calls to customize your feed, add content, confgure the server, schedule deployments, and so on.",
-  createAndServeFeeds_next: "Next: Add content to your feed.",
   //
   organizeAndPublishContent: "Organize and Publish Content",
   organizeAndPublishContent_detail1:
@@ -65,8 +64,6 @@ const es = {
     "1. Once you've created a queue (by completing the previous step), you can add content by making a POST call to the internal API server (e.g., api.yourdomain.com):",
   organizeAndPublishContent_apiCall2:
     "2. Now your post is available your feeds:",
-  organizeAndPublishContent_apiCall3:
-    "3. Next: Secure your feed and add user credentials.",
   //
   manageFeedAuth: "Manage Feed Authentication",
   manageFeedAuth_detail1:

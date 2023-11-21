@@ -12,21 +12,14 @@
         <div class="bold">
           {{ $t('organizeAndPublishContent_apiCall1') }}
         </div>
-        <pre>curl --request POST \
-  -H "Content-Type: application/json" \
-  -H "X-ComposableRSS-API-Key: ${API_KEY}" \
-  -H "X-ComposableRSS-API-Secret: ${API_SECRET}" \
-  --data '[{ "postTitle": { "value": "spiders article" }, "postDesc": { "value": "spiders article description" } }]' \
-  http://<span class="green">api.yourdomain.com</span>/v1/queues/spiders/posts</pre>
+        <div class="api-request-container">
+          <code>curl --request POST \<br>-H "Content-Type: application/json" \<br>-H "X-ComposableRSS-API-Key: ${API_KEY}" \<br>-H "X-ComposableRSS-API-Secret: ${API_SECRET}" \<br>--data '[{ "postTitle": { "value": "spiders article" }, "postDesc": { "value": "spiders article description" } }]' \<br>http://<span class="green">api.yourdomain.com</span>/v1/queues/spiders/posts</code>
+        </div>
         <!-- feed payload -->
         <div class="bold">
           {{ $t('organizeAndPublishContent_apiCall2') }}
         </div>
         <AddContentFeedPayload />
-        <!-- follow-on API calls -->
-        <div class="bold">
-          {{ $t('organizeAndPublishContent_apiCall3') }}
-        </div>
       </div>
     </template>
   </DemoFeature>
@@ -50,6 +43,7 @@ export default {
   flex-direction: column;
   gap: 2rem;
   margin-bottom: 4rem;
+  contain: inline-size;
 }
 
 .green {
@@ -58,5 +52,10 @@ export default {
 
 .bold {
   font-weight: bold;
+}
+
+.api-request-container {
+  text-wrap: nowrap;
+  overflow-x: scroll;
 }
 </style>

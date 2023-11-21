@@ -23,7 +23,6 @@
           <section>
             <v-table
               class="mt-2 mb-2 overflow-auto flex-grow-1"
-              style="white-space: nowrap;"
               fixed-header
             >
               <thead style="text-align: left;white-space: nowrap;">

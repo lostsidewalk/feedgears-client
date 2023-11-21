@@ -23,18 +23,20 @@
         JSON
       </div>
     </div>
-    <slot
-      v-if="selectedTab === 'RSS'"
-      name="rss20"
-    />
-    <slot
-      v-if="selectedTab === 'ATOM'"
-      name="atom10"
-    />
-    <slot
-      v-if="selectedTab === 'JSON'"
-      name="json"
-    />
+    <div class="payload-container">
+      <slot
+        v-if="selectedTab === 'RSS'"
+        name="rss20"
+      />
+      <slot
+        v-if="selectedTab === 'ATOM'"
+        name="atom10"
+      />
+      <slot
+        v-if="selectedTab === 'JSON'"
+        name="json"
+      />
+    </div>
   </div>
 </template>
 
@@ -52,6 +54,7 @@ export default {
 .tab-container {
     display: flex;
     flex-direction: column;
+    contain: inline-size;
 }
 
 .tab-labels {
@@ -78,5 +81,9 @@ export default {
 .tab-label:focus-visible {
     cursor: pointer;
     text-decoration: underline;
+}
+
+.payload-container {
+  overflow-x: scroll;
 }
 </style>

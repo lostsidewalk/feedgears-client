@@ -41,7 +41,7 @@
       >
         <div class="d-flex flex-row flex-gap-1">
           <img
-            src="me.webp"
+            src="/me.webp"
             height="128"
           >
           <div class="intro">

@@ -24,6 +24,10 @@ const routes = [
       baseUrl: process.env.VUE_APP_NEWSGEARS_API_URL,
     }
   },
+  {
+    path: "/:catchAll(.*)",
+    redirect: "/newsgears",
+  },
 ];
 
 const router = createRouter({

@@ -35,22 +35,4 @@ const router = createRouter({
   routes,
 });
 
-const defaultRouteTitle = "Newsgears";
-
-const titlesByRoute = {
-  LandingView: "Newsgears from LostSidewalk Software",
-  HomeView: "Newsgears Feed Dashboard",
-  PasswordResetRequestView: "Newsgears Password Reset Request",
-  PasswordResetCallbackView: "Newsgears Password Reset Continuation",
-  RegistrationRequestView: "Newsgears User Registration",
-  VerificationCallbackView: "Newsgears Email Verification Continuation",
-  SettingsView: "Newsgears User Settings",
-};
-
-router.beforeEach((to, from, next) => {
-  let t = titlesByRoute[to.name];
-  document.title = t ? t : defaultRouteTitle;
-  next();
-});
-
 export default router;

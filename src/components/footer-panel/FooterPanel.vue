@@ -104,7 +104,7 @@ export default {
       window.open("https://www.lostsidewalk.com/", "_blank");
     },
     sendSupportMail() {
-      window.open("mailto:support@feedgears.com", "_blank");
+      window.open("mailto:meh@lostsidewalk.com", "_blank");
     },
     twitter() {
       window.open("https://twitter.com/lostsidewalkllc", "_blank");

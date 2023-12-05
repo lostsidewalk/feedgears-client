@@ -59,6 +59,6 @@ export default {
 
 .api-request-container {
   text-wrap: nowrap;
-  overflow-x: scroll;
+  overflow-x: auto;
 }
 </style>

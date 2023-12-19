@@ -17,7 +17,7 @@
         <v-divider />
         <v-card-text>
           <v-img
-            :src="'dashboard_card_' + (isDark ? 'dark' : 'light') + '.png'"
+            src="dashboard_card_dark.png"
             :alt="$t('dashboardCardScreenshot')"
           />
         </v-card-text>
@@ -33,8 +33,5 @@ export default {
   components: {
     DemoFeature, 
   },
-  props: {
-    isDark: { type: Boolean, default: false },
-  }
 }
 </script>

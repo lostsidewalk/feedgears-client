@@ -10,27 +10,27 @@
         >
           <!-- simplified organization -->
           <v-carousel-item>
-            <SimplifiedOrganization_DemoFeature :is-dark="isDark" />
+            <SimplifiedOrganization_DemoFeature />
           </v-carousel-item>
           <!-- TODO: feed dashboard, disabled until we get a better screenshot -->
           <!-- <v-carousel-item>
-            <FeedDashboard_DemoFeature :is-dark="isDark" />
+            <FeedDashboard_DemoFeature />
           </v-carousel-item> -->
           <!-- enhanced filtering and searching -->
           <v-carousel-item>
-            <EnahcedFiltering_DemoFeature :is-dark="isDark" />
+            <EnahcedFiltering_DemoFeature />
           </v-carousel-item>
           <!-- layout/theme options/material design -->
           <v-carousel-item>
-            <LayoutOptions_DemoFeature :is-dark="isDark" /> 
+            <LayoutOptions_DemoFeature /> 
           </v-carousel-item>
           <!-- streamlined reading experience -->
           <v-carousel-item>
-            <ReadingExperience_DemoFeature :is-dark="isDark" />
+            <ReadingExperience_DemoFeature />
           </v-carousel-item>
           <!-- OPML import -->
           <v-carousel-item>
-            <OPML_DemoFeature :is-dark="isDark" /> 
+            <OPML_DemoFeature /> 
           </v-carousel-item>
           <!-- accessible -->
           <v-carousel-item>
@@ -99,9 +99,6 @@ export default {
     Free_DemoFeature
 },
   computed: {
-    isDark: function () {
-      return this.$vuetify.theme.name === "dark";
-    },
     sampleOpml: function() {
       return '<?xml version="1.0" encoding="UTF-8"?>\n\
         <opml version="1.0">\n\

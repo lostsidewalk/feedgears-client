@@ -10,15 +10,15 @@
         >
           <!-- create and serve syndicated data feeds -->
           <v-carousel-item>
-            <CreateAndServeFeeds_DemoFeature :is-dark="isDark" />
+            <CreateAndServeFeeds_DemoFeature />
           </v-carousel-item>
           <!-- organize and publish content of any type -->
           <v-carousel-item>
-            <OrganizeAndPublishContent_DemoFeature :is-dark="isDark" />
+            <OrganizeAndPublishContent_DemoFeature />
           </v-carousel-item>
           <!-- manage feed authentication and user credentials -->
           <v-carousel-item>
-            <ManageFeedAuth_DemoFeature :is-dark="isDark" />
+            <ManageFeedAuth_DemoFeature />
           </v-carousel-item>
           <!-- publish iTunes podcasts -->
           <v-carousel-item>
@@ -77,11 +77,6 @@ export default {
     SupportOrganizationalNeeds_DemoFeature,
     Free_DemoFeature,
     OpenAPIv3_DemoFeature,
-  },
-  computed: {
-    isDark: function () {
-      return this.$vuetify.theme.name === "dark";
-    },
   },
 };
 </script>

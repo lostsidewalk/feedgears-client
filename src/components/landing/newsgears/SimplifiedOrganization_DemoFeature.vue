@@ -13,7 +13,7 @@
       >
         <v-card-text>
           <v-img
-            :src="'reader_' + (isDark ? 'dark' : 'light') + '_2.png'"
+            src="reader_dark_2.png"
             :alt="$t('queuePageScreenshot')"
           />
         </v-card-text>
@@ -30,8 +30,5 @@ export default {
   components: {
     DemoFeature, 
   },
-  props: {
-    isDark: { type: Boolean, default: false },
-  }
 }
 </script>

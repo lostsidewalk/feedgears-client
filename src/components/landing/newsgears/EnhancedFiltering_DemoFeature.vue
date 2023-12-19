@@ -10,7 +10,7 @@
       <v-card elevation="12">
         <v-card-text>
           <v-img
-            :src="'filter_' + (isDark ? 'dark' : 'light') + '.png'"
+            src="filter_dark.png"
             :alt="$t('filterScreenshot')"
           />
         </v-card-text>
@@ -70,8 +70,5 @@ export default {
   components: {
     DemoFeature, 
   },
-  props: {
-    isDark: { type: Boolean, default: false },
-  }
 }
 </script>

@@ -12,7 +12,7 @@
           <v-card-title>{{ $t('listLayoutsScreenshot') }}</v-card-title>
           <v-card-text>
             <v-img
-              :src="'list_layout_' + (isDark ? 'dark' : 'light') + '.png'"
+              src="list_layout_dark.png"
               :alt="$t('listLayoutsScreenshot')"
             />
           </v-card-text>
@@ -21,7 +21,7 @@
           <v-card-title>{{ $t('cardLayoutsScreenshot') }}</v-card-title>
           <v-card-text>
             <v-img
-              :src="'card_layout_' + (isDark ? 'dark' : 'light') + '.png'"
+              src="card_layout_dark.png"
               :alt="$t('cardLayoutsScreenshot')"
             />
           </v-card-text>
@@ -30,7 +30,7 @@
           <v-card-title>{{ $t('tableLayoutsScreenshot') }}</v-card-title>
           <v-card-text>
             <v-img
-              :src="'table_layout_' + (isDark ? 'dark' : 'light') + '.png'"
+              src="table_layout_dark.png"
               :alt="$t('tableLayoutsScreenshot')"
             />
           </v-card-text>
@@ -47,9 +47,6 @@ export default {
   components: {
     DemoFeature, 
   },
-  props: {
-    isDark: { type: Boolean, default: false },
-  }
 }
 </script>
 

@@ -17,7 +17,7 @@
           </v-card-title>
           <v-card-text>
             <v-img
-              :src="'text_post_' + (isDark ? 'dark' : 'light') + '.png'"
+              src="text_post_dark.png"
               :alt="$t('textArticleScreenshot')"
             />
           </v-card-text>
@@ -30,7 +30,7 @@
           </v-card-title>
           <v-card-text>
             <v-img
-              :src="'podcast_post_' + (isDark ? 'dark' : 'light') + '.png'"
+              src="podcast_post_dark.png"
               :alt="$t('podcastAudioScreenshot')"
             />
           </v-card-text>
@@ -43,7 +43,7 @@
           </v-card-title>
           <v-card-text>
             <v-img
-              :src="'youtube_post_' + (isDark ? 'dark' : 'light') + '.png'"
+              src="youtube_post_dark.png"
               :alt="$t('youtubeVideoScreenshot')"
             />
           </v-card-text>
@@ -56,7 +56,7 @@
           </v-card-title>
           <v-card-text>
             <v-img
-              :src="'pic_post_' + (isDark ? 'dark' : 'light') + '.png'"
+              src="pic_post_dark.png"
               :alt="$t('imageArticleScreenshot')"
             />
           </v-card-text>
@@ -72,9 +72,6 @@ import DemoFeature from "../DemoFeature.vue";
 export default {
   components: {
     DemoFeature,
-  },
-  props: {
-    isDark: { type: Boolean, default: false },
   },
 };
 </script>

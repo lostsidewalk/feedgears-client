@@ -13,7 +13,7 @@
       >
         <v-card-text>
           <v-img
-            :src="'opml_upload_' + (isDark ? 'dark' : 'light') + '.png'"
+            src="opml_upload_dark.png"
             :alt="$t('opmlUploadScreenshot')"
           />
         </v-card-text>
@@ -29,8 +29,5 @@ export default {
   components: {
     DemoFeature, 
   },
-  props: {
-    isDark: { type: Boolean, default: false },
-  }
 }
 </script>

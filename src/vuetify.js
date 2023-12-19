@@ -5,13 +5,9 @@ import colors from 'vuetify/lib/util/colors';
 import * as components from "vuetify/components";
 import * as directives from "vuetify/directives";
 
-const defaultTheme = 'dark';
-
-let preferredTheme = localStorage.getItem('theme');
-
 const vuetify = createVuetify({
   theme: {
-    defaultTheme: preferredTheme ? preferredTheme : defaultTheme,
+    defaultTheme: 'dark',
     themes: {
       light: {
         dark: false,
